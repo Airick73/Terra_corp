@@ -2,4 +2,24 @@
 {% extends "basicapp/base.html" %}
 {% block body_block %}
   <h1>Welcome to Terra Corp!</h1>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Slide one</h2>
+          <img class="testimonial-image" src="https://source.unsplash.com/random/100x80?sig=1" alt="dog-profile">
+          <em>More info</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Slide two</h2>
+          <img class="testimonial-image" src="https://source.unsplash.com/random/100x80?sig=1" alt="lady-profile">
+          <em>More info</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
 {% endblock %}
