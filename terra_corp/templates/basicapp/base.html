@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TerraCorp</title>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href='{% static 'css/mystyle.css' %}'/>
-    <link rel="icon" href='{% static 'images/favicon.ico' %}'
-  </head>
-  <body id='bg'>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'index' %}">Terra Corp</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="{% url 'basicapp:about_me' %}">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'basicapp:carrers' %}">Carrers</a>
-            </li>
-          </ul>
-    </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>TerraCorp</title>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href='{% static 'css/mystyle.css' %}' />
+  <link rel="icon" href='{% static 'images/favicon.ico' %}'>
+
+  <!-- Google Scripts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body id='bg'>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <a class="navbar-brand" href="{% url 'index' %}">Terra Corp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="{% url 'basicapp:about_me' %}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'basicapp:carrers' %}">Carrers</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div style="position: fixed; bottom: 0; width:100%; background-color: black;">
-  <h3 style="text-align: center; color:white"><strong>Contact info</strong></h3>
-  <div class="award">
-    <!-- <p style="text-align: center; color:white"><strong>Gmail</strong></p> -->
-    <!-- <p style="text-align: center;"><img src="image link" height="20px" width="20px" border="1px"></p> -->
-    <p style="text-align:center;color:white">Email: andrewlarson@email.com</p>
-    <p style="text-align:center;color:white">Phone: (401)-283-4932</p>
-  </div>
-</div>
+  
+  {% block body_block %}
+  <!-- Anything outside of this will be inherited in you extend! -->
+  {% endblock %}
 
-
-    <div class="container">
-      {% block body_block %}
-      <!-- Anything outside of this will be inherited in you extend! -->
-      {% endblock %}
-    </div>
-
-  </body>
+</body>
 
 </html>
