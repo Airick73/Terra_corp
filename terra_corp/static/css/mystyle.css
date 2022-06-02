@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat';
+  background-color: #262626;
 }
 
 
@@ -12,7 +13,7 @@ body {
 .carousel-image {
   height: 500px;
   width: 1000px;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .contact-me {
@@ -41,10 +42,25 @@ body {
 
 #news {
   padding: 7% 15%;
+  background-color: white;
 }
 
 #contact-me {
    width:100%;
    background-color: black;
    padding: 1%;
+}
+
+#about_me{
+  padding: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#carrers{
+  padding-top: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+
+
 }
