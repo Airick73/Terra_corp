@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+{% block body_block %}
+<section id="title">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="carousel-image" src='../../static/images/HEUraniumC.jpg' alt="404">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src='../../static/images/oysters.JPG' alt="404">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<section id="news">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Florida Skanska executive talks Tampa Bay construction and need for diversity</h5>
+          <p class="card-text">There’s a lot more prefabrication, especially using precast as opposed to cast in place of concrete, without getting overly technical.</p>
+          <a href="https://www.tampabay.com/news/business/2022/02/17/florida-skanska-executive-talks-tampa-bay-construction-and-need-for-diversity/" class="btn btn-info">Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">On the Forefront of Nutrient Credit Trading Using Oysters: Lessons Learned</h5>
+          <p class="card-text">Oysters are prolific filter feeders that remove light-blocking algae from bay waters and help remove excess nutrients, like nitrogen and phosphorus. More oysters equal better water quality.</p>
+          <a href="https://www.swfwmd.state.fl.us/blog/watermatters-magazine/53/district-port-authority-partner-improve-mckay-bay" class="btn btn-info">Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">District, Port Authority Partner to Improve McKay Bay</h5>
+          <p class="card-text">Three projects are expected to have a positive impact on the bay when they are completed.</p>
+          <a href="https://coast.noaa.gov/digitalcoast/training/oyster-aquaculture.html" class="btn btn-info">Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-me">
+  <h3 style="text-align: center; color:white"><strong>Contact info</strong></h3>
+  <div class="award">
+    <!-- <p style="text-align: center; color:white"><strong>Gmail</strong></p> -->
+    <!-- <p style="text-align: center;"><img src="image link" height="20px" width="20px" border="1px"></p> -->
+
+    <p style="text-align:center;color:white">Email: larsonality1@gmail.com</p>
+    <p style="text-align:center;color:white">Phone: (757)-617-9830</p>
+  </div>
+</section>
+
+{% endblock %}
