@@ -21,6 +21,8 @@
 </head>
 
 <body id='bg'>
+
+
   <nav class="navbar navbar-expand-lg bg-light">
     <a class="navbar-brand" href="{% url 'index' %}">Terra Corp</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +40,13 @@
     </div>
   </nav>
 
-  
+
+
   {% block body_block %}
   <!-- Anything outside of this will be inherited in you extend! -->
   {% endblock %}
+
+
 
 </body>
 

@@ -5,7 +5,7 @@ def index(request):
     return render(request, 'basicapp/index.html')
 
 def carrers(request):
-    
+
     form = Carrer_form()
 
     if request.method == 'POST':
@@ -20,3 +20,6 @@ def carrers(request):
 
 def about_me(request):
     return render(request, 'basicapp/about_me.html')
+
+def essay(request):
+    return render(request, 'basicapp/essay.html')
