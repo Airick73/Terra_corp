@@ -1,27 +1,40 @@
 body {
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   background-color: #262626;
 
 }
 
+.card {
+  border-style: none;
+}
+
+.card img {
+   padding: 3%;
+   height: 300px;
+   width: 100%;
+}
+
+.alt-navbar-style {
+
+}
+
+.carousel {
+  margin: 40px 0 35px;
+  width: 111%;
+  position: relative;
+  right: 6%;
+}
+
 .carousel-item {
-  padding-top: 5%;
   text-align: center;
-
-
 }
 
  .carousel-image {
-  height: 500px;
-  width: 1100px;
+  height: 630px;
+  background-size:contain;
+  width: 100%;
   /* border-radius: 10%; */
 }
-
-.carousel-inner{
-
-}
-
-
 
 .contact-me {
    position: relative;
@@ -30,30 +43,32 @@ body {
    background-color: black;
 }
 
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.custom-nav-data {
+  margin: 1% 5% 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 65px;
+}
+
 #aboutmecontent{
   font-size: 24px;
-}
-#essaycontent{
-  font-size: 16px;
-
-}
-
-.navbar {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
-
-
-#title {
-  background-color: #262626;
-  padding: 3% 10%;
-}
-
-#news {
-  padding: 7% 15%;
-  background-color: white;
 }
 
 #contact-me {
@@ -62,4 +77,18 @@ body {
    padding: 1%;
    left: 0;
    bottom: 0;
+}
+
+#essaycontent{
+  font-size: 16px;
+}
+
+#news {
+  padding: 7% 5%;
+  background-color: white;
+}
+
+#title {
+  background-color: #262626;
+  padding: 3% 10% 65px;
 }

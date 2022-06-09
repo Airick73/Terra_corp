@@ -16,27 +16,29 @@
   <!-- Google Scripts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 </head>
 
 <body id='bg'>
 
 
-  <nav class="navbar navbar-expand-lg bg-light">
-    <a class="navbar-brand" href="{% url 'index' %}">Terra Corp</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="{% url 'basicapp:about_me' %}">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'basicapp:carrers' %}">Carrers</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="custom-nav-data container-fluid">
+      <a class="navbar-brand" href="{% url 'index' %}">Terra Corp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{% url 'basicapp:about_me' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'basicapp:carrers' %}">Carrers</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -45,9 +47,9 @@
   {% block body_block %}
   <!-- Anything outside of this will be inherited in you extend! -->
   {% endblock %}
-
-
-
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../../static/javascript/index.js" charset="utf-8"></script>
 </body>
 
 </html>
