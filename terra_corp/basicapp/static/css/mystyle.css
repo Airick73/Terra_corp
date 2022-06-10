@@ -16,9 +16,9 @@ body {
 
 .carousel {
   margin: 40px 0 35px;
-  width: 111%;
+  width: 112.4%;
   position: relative;
-  right: 6%;
+  right: 6.2%;
 }
 
 .carousel-item {
@@ -43,24 +43,26 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1;
-  padding: 24px 0;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .custom-nav-data {
   margin: 0 5%;
-  padding: 0;
+  padding: 24px 0;
+  border-bottom: 1px inset rgba(255, 255, 255, 0.3)
 }
 
 .nav-link {
-  color: white;
   font-size: 1rem;
   font-weight: 900;
+  color: black;
 }
 
 .navbar-brand {
-  color: white;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-right: 65px;
 }
 
@@ -96,10 +98,28 @@ body {
 
 /* Modified Styles for js */
 
-.alt-navbar-bg {
-  background-color: white;
+.t-sticky-navbar-bg--dark {
+  transition: 0.5s;
+  background-color: #262626;
+  box-shadow: none;
 }
 
-.alt-navbar-text {
-  color: black;
+.t-sticky-navbar-text--dark {
+  transition: 0.5s;
+  color: white;
+  box-shadow: none;
+}
+
+.sticky-navbar-bg--dark {
+  background-color: #262626;
+  box-shadow: none;
+}
+
+.sticky-navbar-text--dark {
+  color: white;
+  box-shadow: none;
+}
+
+.sticky-navbar-div--noBorder {
+  border-bottom: none;
 }
