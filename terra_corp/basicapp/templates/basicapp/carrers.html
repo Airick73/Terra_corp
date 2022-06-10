@@ -2,21 +2,41 @@
 {% extends "basicapp/base.html" %}
 {% block body_block %}
 
-<div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Interdisciplinary Carrer and Internship Oppertunities</h1>
-        <p class="col-md-8 fs-4">Apply below for an oppertunity to get in contact with us about carrer oppertunities and take your first step in saving the world™. </p>
+    <div style="background-color: white;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="p-5 mb-5 bg-light" style=" background-position: 50% 85%; background-size: cover; background-repeat: no-repeat; background-image: url('../../static/images/water_science.avif');">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold text-center text-white">Save The World</h1>
+          <h3 class="text-center text-white">Starting with Tampa Bay</h3>
+        </div>
       </div>
+      <div class="p-5 bg-light">
+            <div class="container-fluid py-5 ">
+              <h1 class="display-5 fw-bold">Interdisciplinary Carrer and Internship Oppertunities</h1>
+              <p class="col-md-8 fs-4">Apply below for an oppertunity to get in contact with us about carrer oppertunities and take your first step in saving the world™. </p>
+                <h1>Carrer sign up</h1>
+                <form method="POST">
+                  {{form.as_p}}
+                  {% csrf_token %}
+                  <input type="submit" class = 'btn btn-info' value="Submit">
+                </form>
+            </div>
+          </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
     </div>
 
-  <div class="container text-white">
-    <h1>Carrer sign up</h1>
-    <form method="POST">
-      {{form.as_p}}
-      {% csrf_token %}
-      <input type="submit" class = 'btn btn-primary' value="Submit">
-    </form>
-  </div>
+
 
 
 {% endblock %}
