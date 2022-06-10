@@ -14,10 +14,6 @@ body {
    width: 100%;
 }
 
-.alt-navbar-style {
-
-}
-
 .carousel {
   margin: 40px 0 35px;
   width: 111%;
@@ -47,14 +43,15 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1;
+  padding: 24px 0;
 }
 
 .custom-nav-data {
-  margin: 1% 5% 0;
+  margin: 0 5%;
   padding: 0;
 }
 
-.nav-item a {
+.nav-link {
   color: white;
   font-size: 1rem;
   font-weight: 900;
@@ -91,4 +88,14 @@ body {
 #title {
   background-color: #262626;
   padding: 3% 10% 65px;
+}
+
+/* Modified Styles for js */
+
+.alt-navbar-bg {
+  background-color: white;
+}
+
+.alt-navbar-text {
+  color: black;
 }
