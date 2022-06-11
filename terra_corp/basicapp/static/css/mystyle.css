@@ -15,7 +15,7 @@ body {
 }
 
 .carousel {
-  margin: 40px 0 35px;
+  margin-bottom: 35px;
   width: 112.4%;
   position: relative;
   right: 6.2%;
@@ -39,25 +39,23 @@ body {
    background-color: black;
 }
 
-.navbar{
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  padding: 0;
-  background-color: white;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
 .custom-nav-data {
   margin: 0 5%;
   padding: 24px 0;
   border-bottom: 1px inset rgba(255, 255, 255, 0.3)
 }
 
-.nav-link {
-  font-size: 1rem;
-  font-weight: 900;
-  color: black;
+.image-title {
+  padding-top: 90px;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar-brand {
@@ -66,13 +64,22 @@ body {
   margin-right: 65px;
 }
 
+.nav-link {
+  font-size: 1rem;
+  font-weight: 900;
+  color: black;
+}
+
+
 #aboutmecontent{
   font-size: 24px;
-  margin-left: 15%;
-  margin-right: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
   color: #333;
   /* background-color: yellow; */
 }
+
+
 
 #contact-me {
    width:100%;
@@ -93,10 +100,10 @@ body {
 
 #title {
   background-color: #262626;
-  padding: 3% 10% 65px;
+  padding: 88px 10% 65px;
 }
 
-/* Modified Styles for js */
+/* Modified Styles for navbar js */
 
 .t-sticky-navbar-bg--dark {
   transition: 0.5s;
@@ -122,4 +129,36 @@ body {
 
 .sticky-navbar-div--noBorder {
   border-bottom: none;
+}
+
+/* MOBILE CSS */
+@media (max-width: 992px) {
+  .carousel {
+    margin-top: 0;
+  }
+
+  .custom-nav-data {
+    padding: 16px 0;
+  }
+
+  .image-title {
+    padding-top: 0;
+  }
+
+  .menu-icon {
+    width: 25px;
+  }
+
+  .navbar {
+    position: static;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  #title {
+    padding-top: 0;
+  }
+
 }
