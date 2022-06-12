@@ -64,6 +64,10 @@ body {
   margin-right: 65px;
 }
 
+.navbar-static {
+  position: static;
+}
+
 .nav-link {
   font-size: 1rem;
   font-weight: 900;

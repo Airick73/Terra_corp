@@ -36,7 +36,7 @@ if(window.scrollY === 0){
 window.addEventListener("scroll", function() {
   currentWindowPOS = window.scrollY;
 
-  if (window.innerWidth > "991") {
+  if (window.innerWidth > "991" && !($(".navbar").hasClass("navbar-static"))) {
     window.requestAnimationFrame(function() {
       animateNavbar(currentWindowPOS);
     });
