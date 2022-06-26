@@ -6,9 +6,9 @@ var documentBodyColor = $('body').css('background-color')
 //Determining the sticky style of the navbar (background)//
 var stickyThemeBg;
 var stickyTansitionBg;
-if(documentBodyColor === "rgb(38, 38, 38)") {
-  stickyThemeBg = "sticky-navbar-bg--dark";
-  stickyTansitionBg = "t-sticky-navbar-bg--dark";
+if(documentBodyColor === "rgb(18, 18, 18)") {
+  stickyThemeBg = "sticky-navbar-bg";
+  stickyTansitionBg = "t-sticky-navbar-bg";
 }
 else { //NULL
   stickyThemeBg = "";
@@ -18,9 +18,9 @@ else { //NULL
 //Determining the sticky style of the navbar (text)//
 var stickyThemeText;
 var stickyTansitionText;
-if (documentBodyColor === "rgb(38, 38, 38)"){
-  stickyThemeText = "sticky-navbar-text--dark";
-  stickyTansitionText = "t-sticky-navbar-text--dark";
+if (documentBodyColor === "rgb(18, 18, 18)"){
+  stickyThemeText = "sticky-navbar-text";
+  stickyTansitionText = "t-sticky-navbar-text";
 }
 else { //NULL
   stickyThemeText = "";
@@ -55,30 +55,30 @@ function animateNavbar(position) {
   //Scrolling up window//
   else {
     //Check to see if navbar is at top of window//
-    if (position === 0 && documentBodyColor === "rgb(38, 38, 38)") {
+    if (position === 0 && documentBodyColor === "rgb(18, 18, 18)") {
       //If at top of window, determine if smooth transition is needed//
       if ($(".navbar").css("display") == 'none') {
-        $(".navbar").addClass("sticky-navbar-bg--dark");
-        $(".navbar-brand, .nav-link").addClass("sticky-navbar-text--dark");
+        $(".navbar").addClass("sticky-navbar-bg");
+        $(".navbar-brand, .nav-link").addClass("sticky-navbar-text");
         $(".navbar").slideDown("fast", () => {
           $(".navbar").stop(true, true);
         });
       }
       else {
-        $(".navbar").addClass("t-sticky-navbar-bg--dark");
-        $(".navbar-brand, .nav-link").addClass("t-sticky-navbar-text--dark");
+        $(".navbar").addClass("t-sticky-navbar-bg");
+        $(".navbar-brand, .nav-link").addClass("t-sticky-navbar-text");
         setTimeout(() => {
-          $(".navbar").addClass("sticky-navbar-bg--dark");
-          $(".navbar-brand, .nav-link").addClass("sticky-navbar-text--dark");
-          $(".navbar").removeClass("t-sticky-navbar-bg--dark");
-          $(".navbar-brand, .nav-link").removeClass("t-sticky-navbar-text--dark");
+          $(".navbar").addClass("sticky-navbar-bg");
+          $(".navbar-brand, .nav-link").addClass("sticky-navbar-text");
+          $(".navbar").removeClass("t-sticky-navbar-bg");
+          $(".navbar-brand, .nav-link").removeClass("t-sticky-navbar-text");
         }, "150");
       }
     }
     //Not at top of window//
     else {
-      $(".navbar").removeClass("sticky-navbar-bg--dark");
-      $(".navbar-brand, .nav-link").removeClass("sticky-navbar-text--dark");
+      $(".navbar").removeClass("sticky-navbar-bg");
+      $(".navbar-brand, .nav-link").removeClass("sticky-navbar-text");
       $(".navbar").slideDown("fast", () => {
         $(".navbar").stop(true, true);
       });
