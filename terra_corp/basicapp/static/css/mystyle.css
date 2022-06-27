@@ -138,6 +138,11 @@ body {
   height: var(--windowHeight);
 }
 
+#arcGIS-section {
+  padding: 7% 5%;
+  background-color: white;
+}
+
 /* Modified Styles for navbar js */
 
 .t-sticky-navbar-bg {
