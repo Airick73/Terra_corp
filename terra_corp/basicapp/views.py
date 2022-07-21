@@ -23,3 +23,6 @@ def about_me(request):
 
 def essay(request):
     return render(request, 'basicapp/essay.html')
+
+def donate(request):
+    return render(request, 'basicapp/donate.html')

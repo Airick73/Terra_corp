@@ -28,15 +28,17 @@
       <div class="custom-nav-data container-fluid">
         <a class="navbar-brand" href="{% url 'index' %}">Terra Corp</a>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{% url 'basicapp:carrers' %}">Make A Difference</a>
-          </li>
+            <div id="nav-link" class="nav-link">
+                <a>Make A Difference</a>
+            </div>
         </ul>
       </div>
     </nav>
     {% block body_block %}
     <!-- Anything outside of this will be inherited in you extend! -->
     {% endblock %}
+
+
     <script src="../../static/javascript/navbar.js" charset="utf-8"></script>
 </body>
 

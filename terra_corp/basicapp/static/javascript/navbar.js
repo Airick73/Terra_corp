@@ -3,6 +3,7 @@ var lastWindowPOS = window.scrollY;
 var ticking = false;
 var documentBodyColor = $('body').css('background-color')
 
+
 //Determining the sticky style of the navbar (background)//
 var stickyThemeBg;
 var stickyTansitionBg;
@@ -87,3 +88,16 @@ function animateNavbar(position) {
 
   lastWindowPOS = currentWindowPOS;
 }
+
+//code for make a difference button transition
+window.addEventListener('click', function(e){
+  if (document.getElementById('nav-link').contains(e.target)){
+   document.getElementById("nav-link").classList.add('nav-transition');
+    document.getElementById("nav-link").innerHTML =
+    '<a style="color: white; text-decoration: none; " href="../../basicapp/donate/">Donate</a><br/><a style="color: white; text-decoration: none;" href="../../basicapp/carrers/">Careers</a>';
+  } else{
+   document.getElementById("nav-link").classList.remove('nav-transition');
+   document.getElementById("nav-link").innerHTML =
+    '<a>Make A Difference</a>';
+  }
+});
