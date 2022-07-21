@@ -10,6 +10,10 @@ body {
   color: #FFFFFF;
 }
 
+.card-body{
+  padding-left: 0;
+}
+
 .card-img-containter {
   position: relative;
 }
