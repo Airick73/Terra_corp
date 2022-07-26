@@ -1,16 +1,23 @@
 {% extends "basicapp/base.html" %}
+
+
+
+
+
 {% block body_block %}
-
-<script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
-<iframe src="https://donorbox.org/embed/terra-corp?default_interval=o"
-        name="donorbox"
-        allowpaymentrequest="allowpaymentrequest"
-        seamless="seamless"
-        frameborder="0"
-        scrolling="no"
-        height="900px"
-        width="100%"
-        style="max-width: 500px; min-width: 310px; max-height:none!important">
-</iframe>
-
+<div class="donate-page">
+  <div class="donate-box">
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+    <iframe src="https://donorbox.org/embed/terra-corp?default_interval=o"
+            name="donorbox"
+            allowpaymentrequest="allowpaymentrequest"
+            seamless="seamless"
+            frameborder="0"
+            scrolling="no"
+            height="900px"
+            width="100%"
+            style="max-width: 500px; min-width: 310px; max-height:none!important">
+    </iframe>
+  </div>
+</div>
 {% endblock %}
