@@ -316,7 +316,7 @@ body {
 
 }
 
-/* #essaypage{
+#essaypage{
   font-size: 16px;
   position: relative;
   top: 100px;
@@ -324,5 +324,4 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 50px;
-  background-image: linear-gradient(0deg, rgba(99, 109, 81, 0.3) 0%,rgba(198, 203, 94, 0.3) 100%),linear-gradient(90deg, rgb(18, 116, 125),rgb(20, 216, 80));
-} */
+}
