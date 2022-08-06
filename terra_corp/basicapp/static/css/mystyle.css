@@ -6,8 +6,9 @@ body {
 
 .card {
   border-style: none;
-  background-color: #222222;
-  color: #FFFFFF;
+  background-color: inherit;
+  color: black;
+
 }
 
 .card-body{
@@ -172,6 +173,21 @@ body {
   height: 50%;
 }
 
+.larson{
+  height: 80%;
+  border-radius: 75%;
+  text-align: center;
+}
+
+.essay-link{
+  color: white;
+  text-decoration: none;
+}
+
+.essay-link:hover{
+  color: green;
+}
+
 
 #about-me {
   background-color: #FFFFFF;
@@ -192,11 +208,16 @@ body {
 
 #essaycontent{
   font-size: 16px;
+  position: relative;
+  top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 #news {
   padding: 7% 5%;
-  background-color: #222222;
+  background-color: #FFFFFF;
 }
 
 #title {
@@ -245,6 +266,12 @@ body {
 /* MOBILE CSS */
 @media (max-width: 992px) {
 
+  .larson{
+    padding-top: 50px;
+    height: 50%;
+    padding-bottom: 0px;
+  }
+
   .custom-nav-data {
     padding: 16px 0;
   }
@@ -274,3 +301,15 @@ body {
   }
 
 }
+
+
+/* #essaypage{
+  font-size: 16px;
+  position: relative;
+  top: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-image: linear-gradient(0deg, rgba(99, 109, 81, 0.3) 0%,rgba(198, 203, 94, 0.3) 100%),linear-gradient(90deg, rgb(18, 116, 125),rgb(20, 216, 80));
+} */
