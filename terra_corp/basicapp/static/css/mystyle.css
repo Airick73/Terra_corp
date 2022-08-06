@@ -169,6 +169,10 @@ body {
   text-decoration: underline;
 }
 
+.larson-div{
+  text-align: center;
+}
+
 .about-me-content {
   align-items: center;
 }
@@ -282,10 +286,22 @@ body {
 /* MOBILE CSS */
 @media (max-width: 992px) {
 
+  .larson-div{
+    margin-bottom: -100px;
+  }
+
   .larson{
     padding-top: 50px;
     height: 50%;
     padding-bottom: 0px;
+  }
+
+  .logo{
+    padding-bottom: 25px;
+  }
+
+  #about-me{
+    text-align: center;
   }
 
   .custom-nav-data {
