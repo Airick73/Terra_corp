@@ -4,26 +4,20 @@ var ticking = false;
 var documentBodyColor = $('body').css('background-color')
 
 
-//Determining the sticky style of the navbar (background)//
+//Determining the sticky style of the navbar (background and text)//
 var stickyThemeBg;
 var stickyTansitionBg;
+var stickyThemeText;
+var stickyTansitionText;
 if(documentBodyColor === "rgb(18, 18, 18)") {
   stickyThemeBg = "sticky-navbar-bg";
   stickyTansitionBg = "t-sticky-navbar-bg";
-}
-else { //NULL
-  stickyThemeBg = "";
-  stickyTansitionBg = "";
-}
-
-//Determining the sticky style of the navbar (text)//
-var stickyThemeText;
-var stickyTansitionText;
-if (documentBodyColor === "rgb(18, 18, 18)"){
   stickyThemeText = "sticky-navbar-text";
   stickyTansitionText = "t-sticky-navbar-text";
 }
 else { //NULL
+  stickyThemeBg = "";
+  stickyTansitionBg = "";
   stickyThemeText = "";
   stickyTansitionText = "";
 }
@@ -94,7 +88,7 @@ window.addEventListener('click', function(e){
   if (document.getElementById('nav-link').contains(e.target)){
    document.getElementById("nav-link").classList.add('nav-transition');
     document.getElementById("nav-link").innerHTML =
-    '<a style="color: white; text-decoration: none; " href="../../basicapp/donate/">Donate</a><br/><a style="color: white; text-decoration: none;" href="../../basicapp/carrers/">Careers</a>';
+    '<a style="color: inherit; text-decoration: none; " href="../../basicapp/donate/">Donate</a><br/><a style="color: inherit; text-decoration: none;" href="../../basicapp/carrers/">Careers</a>';
   } else{
    document.getElementById("nav-link").classList.remove('nav-transition');
    document.getElementById("nav-link").innerHTML =
