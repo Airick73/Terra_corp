@@ -148,6 +148,8 @@ body {
   text-align: center;
   width: 200px;
   cursor: pointer;
+  position: relative;
+  right: 5px;
 }
 
 .nav-transition{
@@ -304,6 +306,7 @@ body {
 
   .navbar {
     position: absolute;
+    flex-wrap: nowrap;
   }
 
   .navbar-toggler {
@@ -319,9 +322,8 @@ body {
 #essaypage{
   font-size: 16px;
   position: relative;
-  top: 100px;
+  top: 20px;
   color: white;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
 }
