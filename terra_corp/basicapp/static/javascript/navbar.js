@@ -88,7 +88,7 @@ window.addEventListener('click', function(e){
   if (document.getElementById('nav-link').contains(e.target)){
    document.getElementById("nav-link").classList.add('nav-transition');
     document.getElementById("nav-link").innerHTML =
-    '<a style="color: inherit; text-decoration: none; " href="../../basicapp/donate/">Donate</a><br/><a style="color: inherit; text-decoration: none;" href="../../basicapp/carrers/">Careers</a>';
+    '<a style="color: inherit; text-decoration: none; " href="https://donorbox.org/terra-phidelis-formation">Donate</a><br/><a style="color: inherit; text-decoration: none;" href="../../basicapp/carrers/">Careers</a>';
   } else{
    document.getElementById("nav-link").classList.remove('nav-transition');
    document.getElementById("nav-link").innerHTML =
